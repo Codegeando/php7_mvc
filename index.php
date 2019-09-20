@@ -7,7 +7,7 @@
     use Models\Producto;
     $data = array(
         'price' => 12.5,
-        'name' => 'ACE',
+        'name' => 'JJ',
         'stock' => 20);
     $p = new Producto();
     var_dump($p->create($data));

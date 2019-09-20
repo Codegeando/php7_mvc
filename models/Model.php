@@ -21,8 +21,7 @@
             $args = func_get_args()[0];
             $keys = implode(',',array_keys($args));
             $sql = "insert into $this->table ($this->primaryKey,$keys) values(null,".$this->format($args).")";
-            echo $sql;
-            #return $this->db->query($sql);
+            return $this->db->query($sql);
         }
 
         public function format($data){
