@@ -6,8 +6,8 @@
 
     use Models\Producto;
     $data = array(
-        'name' => 'ACE',
         'price' => 12.5,
+        'name' => 'ACE',
         'stock' => 20);
     $p = new Producto();
     var_dump($p->create($data));
